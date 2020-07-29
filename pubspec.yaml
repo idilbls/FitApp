@@ -1,0 +1,291 @@
+name: fitappson
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+
+  cloud_firestore: ^0.13.5
+  firebase_auth: ^0.16.0
+  firebase: ^7.3.0
+  firebase_core: ^0.4.4+3
+  auto_size_text: ^2.1.0
+  modal_progress_hud: ^0.1.3
+  firebase_storage: ^3.1.5
+  image_picker: ^0.6.5+2
+  provider: ^3.1.1
+  uuid: 2.0.4
+  url_launcher: ^3.0.3
+  shared_preferences: "^0.4.2"
+  google_sign_in: ^4.4.6
+  flappy_search_bar: 1.4.1
+  getflutter: ^1.0.10
+  firebase_messaging: ^6.0.13
+
+  flutter:
+    sdk: flutter
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  intl:
+  carousel_slider: ^1.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+
+  assets:
+    - images/Achievements/1.PNG
+    - images/Achievements/2.PNG
+    - images/Achievements/3.PNG
+    - images/Achievements/4.PNG
+    - images/Achievements/5.PNG
+    - images/Achievements/6.PNG
+    - images/Achievements/7.PNG
+    - images/Achievements/8.PNG
+    - images/Achievements/9.PNG
+    - images/Achievements/10.PNG
+    - images/finish0.jpg
+    - images/finish1.jpg
+    - images/finish3.jpg
+    - images/finish4.jpg
+    - images/back_icon.png
+    - images/achievements.png
+    - images/more.png
+    - images/scores.png
+    - images/settings.png
+    - images/settings_active.png
+    - images/plus.png
+    - images/menu.png
+    - images/dumbbell.png
+    - images/home.png
+    - images/menu_active.png
+    - images/done.png
+    - images/email.png
+    - images/help.png
+    - images/key.png
+    - images/language.png
+    - images/logout.png
+    - images/notifications.png
+    - images/privacy.png
+    - images/star.png
+    - images/start1.jpg
+    - images/start2.jpg
+    - images/start3.jpg
+    - images/start4.jpg
+    - images/start5.jpg
+    - images/start6.jpg
+    - images/shoulder/1.PNG
+    - images/shoulder/2.PNG
+    - images/shoulder/3.PNG
+    - images/shoulder/4.PNG
+    - images/shoulder/5.PNG
+    - images/shoulder/6.PNG
+    - images/shoulder/7.PNG
+    - images/shoulder/8.PNG
+    - images/shoulder/9.PNG
+    - images/shoulder/10.PNG
+    - images/shoulder/shoulder1.jpg
+    - images/arm/1.PNG
+    - images/arm/2.PNG
+    - images/arm/3.PNG
+    - images/arm/4.PNG
+    - images/arm/5.PNG
+    - images/arm/6.PNG
+    - images/arm/7.PNG
+    - images/arm/8.PNG
+    - images/arm/9.PNG
+    - images/arm/10.PNG
+    - images/sixpack/1.JPG
+    - images/sixpack/2.JPG
+    - images/sixpack/3.JPG
+    - images/sixpack/4.JPG
+    - images/sixpack/5.JPG
+    - images/sixpack/6.JPG
+    - images/sixpack/7.JPG
+    - images/sixpack/8.JPG
+    - images/sixpack/9.JPG
+    - images/sixpack/10.JPG
+    - images/leg/1.JPG
+    - images/leg/2.JPG
+    - images/leg/3.JPG
+    - images/leg/4.JPG
+    - images/leg/5.JPG
+    - images/leg/6.JPG
+    - images/leg/7.JPG
+    - images/leg/8.JPG
+    - images/leg/9.JPG
+    - images/leg/10.JPG
+    - images/chest/1.JPG
+    - images/chest/2.JPG
+    - images/chest/3.JPG
+    - images/chest/4.JPG
+    - images/chest/5.JPG
+    - images/chest/6.JPG
+    - images/chest/7.JPG
+    - images/chest/8.JPG
+    - images/chest/9.JPG
+    - images/chest/10.JPG
+    - images/back/1.JPG
+    - images/back/2.JPG
+    - images/back/3.JPG
+    - images/back/4.JPG
+    - images/back/5.JPG
+    - images/back/6.JPG
+    - images/back/7.JPG
+    - images/back/8.JPG
+    - images/back/9.JPG
+    - images/back/10.JPG
+    - images/1.jpeg
+    - images/2.jpeg
+    - images/3.jpeg
+    - images/4.jpeg
+    - images/5.jpeg
+    - images/6.jpeg
+    - images/arkaplan.jpg
+    - images/help.jpeg
+    - images/privacy.jpeg
+    - images/winner.png
+    - images/Shoulder1/Seated_dumbbell_shoulder_press.jpg
+    - images/Shoulder1/Arm_circle.jpg
+    - images/Shoulder1/Bentover.jpg
+    - images/Shoulder1/Dumbbell_lateral_raise.jpg
+    - images/Shoulder1/Dumbbell_shoulder_press.jpg
+    - images/Shoulder1/Push_up.JPG
+    - images/Shoulder1/Shoulder_shrug.JPG
+    - images/Shoulder1/Upright_row.JPG
+    - images/Leg1/Calf_raise.JPG
+    - images/Leg1/Flutter_kicks.jpg
+    - images/Leg1/Front_kick.jpg
+    - images/Leg1/Jump.jpg
+    - images/Leg1/modified_scissors.jpg
+    - images/Leg1/Side_leg_raise.jpg
+    - images/Leg1/Squat.jpg
+    - images/Leg1/Walking_lunge.jpg
+    - images/Leg1/Wall_sit.jpg
+    - images/Leg1/Plank_leg_swing.jpg
+    - images/Chest1/Alt_Chest_Expansion.JPG
+    - images/Chest1/Arm_scissors.jpg
+    - images/Chest1/Chest_expansion.jpg
+    - images/Chest1/Chest_press.jpg
+    - images/Chest1/Dumbbell_bench_press.JPG
+    - images/Chest1/Overhead_stretch.jpg
+    - images/Chest1/Plyometric_pushup.jpg
+    - images/Chest1/Push_Up.jpg
+    - images/Chest1/Renegade_Row.JPG
+    - images/Chest1/Reverse_angels.JPG
+    - images/Back1/Back_extensions.jpg
+    - images/Back1/Back_rotations.jpg
+    - images/Back1/Cat_Cow.jpg
+    - images/Back1/Deadlifts.jpg
+    - images/Back1/Groin_stretches.jpg
+    - images/Back1/Knee_Roll.jpg
+    - images/Back1/Step_jacks.jpg
+    - images/Back1/Superman_streches.jpg
+    - images/Arm1/Biceps_curls.JPG
+    - images/Arm1/Diamond_Pushup.jpg
+    - images/Arm1/Dumbbell_front_raise.jpg
+    - images/Arm1/Front_arm_plank_reach_out.jpg
+    - images/Arm1/Overhead_tripcep.JPG
+    - images/Arm1/Punches.jpg
+    - images/Arm1/Side_plank.jpg
+    - images/Arm1/Tricep_kickback_exercise.jpg
+    - images/Arm1/Triceps_dip.jpg
+    - images/Arm1/Upright_row.JPG
+    - images/Belly1/Cross_Crunches.jpg
+    - images/Belly1/Crunches.jpg
+    - images/Belly1/High_Knees.jpg
+    - images/Belly1/Knee_to_elbow.jpg
+    - images/Belly1/Leg_raise.jpg
+    - images/Belly1/Marching_steps.jpg
+    - images/Belly1/Side_jack_knive.jpg
+    - images/Belly1/Side_plank_rotation.JPG
+    - images/Belly1/Sit_up.jpg
+    - images/Belly1/Sitting_twist.jpg
+    - images/Achievements/1.png
+    - images/Achievements/2.png
+    - images/Achievements/3.png
+    - images/Achievements/4.png
+    - images/Achievements/5.png
+    - images/Achievements/6.png
+    - images/Achievements/7.png
+    - images/Achievements/8.png
+    - images/Achievements/9.png
+    - images/Achievements/10.png
+    - images/Leaderboard.JPG
+    - images/Chest1/Alt_Chest_Expansion.JPG
+    - images/Chest1/Arm_scissors.jpg
+    - images/Chest1/Chest_expansion.jpg
+    - images/Chest1/Chest_press.jpg
+    - images/Chest1/Dumbbell_bench_press.JPG
+    - images/Chest1/Overhead_stretch.jpg
+    - images/Chest1/Plyometric_pushup.jpg
+    - images/Chest1/Push_Up.jpg
+    - images/Chest1/Renegade_Row.JPG
+    - images/Chest1/Reverse_angels.JPG
+    - images/homeback.jpg
+    - images/createAccount_1.jpg
+    - images/Login_back.jpg
+    - images/back_icon.png
+    - images/bicycle.png
+    - images/ProfilePic.png
+    - images/bell.png
+    - images/goal.png
+    - images/reward.png
+    - images/0.png
+    - images/1.png
+    - images/2.png
+    - images/3.png
+    - images/4.png
+    - images/exerciseTime.png
+    - images/water.png
+    - images/sport.png
+    - images/yoga.png
+    - images/eat.png
+    - images/forget4.jpeg
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Dancing Script
+      fonts:
+        - asset: fonts/DancingScript-Medium.ttf
+          style: italic
